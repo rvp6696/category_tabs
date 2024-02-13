@@ -29,4 +29,4 @@ Follow these steps to run the application:
 - JavaScript
 ***
 
-<a href="" target="_new"> Click Here </a> to view the live project.
+<a href="https://rvp6696.github.io/category_tabs/" target="_new"> Click Here </a> to view the live project.
