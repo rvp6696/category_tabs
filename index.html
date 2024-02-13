@@ -5,17 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
-    <title>Coding Assesment L2 boilerplate</title>
+    <title>Category tabs</title>
 
 </head>
 
-<body>
-    <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
-    </div>
-    <!-- Happy coding 😊 -->
+<body onload="fetchData('Men')">
+    <header>
+        <h1>SELECT YOUR CHOICE</h1>
+    </header>
+
+    <main>
+        <section id="category">
+            <div class="tab active" onclick="changeTab(this); fetchData('Men')"><img class="emoji-img"
+                    src="./Emoji/men_emoji.png" alt="men emoji" />Men</div>
+            <div class="tab" onclick="changeTab(this); fetchData('Women')"><img class="emoji-img"
+                    src="./Emoji/women_emoji.png" alt="men emoji" />Women</div>
+            <div class="tab" onclick="changeTab(this); fetchData('Kids')"><img class="emoji-img"
+                    src="./Emoji/kids_emoji.png" alt="men emoji" />Kids</div>
+        </section>
+
+        <section id="resultContainer"></section>
+    </main>
+    <!-- <div class="loader"></div> -->
     <script src="./script.js"></script>
 </body>
 
